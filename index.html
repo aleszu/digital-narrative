@@ -13,7 +13,6 @@
 	<script src="./lib/jquery.mousewheel.js"></script>
 	<script src="./lib/bootstrap-modal.js"></script>
 	<script src="./lib/underscore-min.js"></script>
-	
 	<script src="./js/content.js"></script>
 </head>
 
@@ -28,10 +27,6 @@
 	<script>
 
 	$(function(){
-		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
-
-		$(".post").wrap("<td></td>");
-
 		// Map scroll to horizontal
 		$("body, html").mousewheel(function(event, delta) {
 			this.scrollLeft -= (delta * 30);
