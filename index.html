@@ -74,21 +74,21 @@
 		return ids;
 	}
 
-	// loadHTML(); 
-	// function loadHTML(source, target){
+	// Load HTML from file into specified ID
+	loadHTML("001.html", "y"); 
 
-	// }
+	function loadHTML(source, target){
+		var xhr= new XMLHttpRequest();
+		xhr.open('GET', 'links/' + source, true);
 
-	var xhr= new XMLHttpRequest();
-	xhr.open('GET', 'links/001.html', true);
+		xhr.onreadystatechange= function() {
+		    if (this.readyState!==4) return;
+		    if (this.status!==200) return; // or whatever error handling you want
+		    document.getElementById(target).innerHTML= this.responseText;
+		};
 
-	xhr.onreadystatechange= function() {
-	    if (this.readyState!==4) return;
-	    if (this.status!==200) return; // or whatever error handling you want
-	    document.getElementById('y').innerHTML= this.responseText;
-	};
-
-	xhr.send();
+		xhr.send();
+	}
 
 	$.vegas.defaults = {
 	  background: {
