@@ -8,17 +8,19 @@
 	<title>Digital Narrative</title>
 	
 	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./lib/vegas/jquery.vegas.min.css">
 	
 	<script src="./lib/jquery.min.js"></script>
 	<script src="./lib/jquery.mousewheel.js"></script>
 	<script src="./lib/bootstrap-modal.js"></script>
 	<script src="./lib/underscore-min.js"></script>
+	<script src="./lib/vegas/jquery.vegas.min.js"></script>
 	<script src="./js/content.js"></script>
 </head>
 
 <body>
 	<div id="y"></div>
-	
+
 	<h1>Walking the Border</h1>
 
 	<div id="page-wrap"><table cellspacing="30"><tbody>
@@ -72,6 +74,11 @@
 		return ids;
 	}
 
+	// loadHTML(); 
+	// function loadHTML(source, target){
+
+	// }
+
 	var xhr= new XMLHttpRequest();
 	xhr.open('GET', 'links/001.html', true);
 
@@ -82,6 +89,35 @@
 	};
 
 	xhr.send();
+
+	$.vegas.defaults = {
+	  background: {
+	    src:         null, // defined by Css
+	    align:       'center',
+	    valign:      'center',
+	    fade:        1000,
+	    loading:     true,
+	    load:        function(){},
+	    complete:    function(){}
+	  },
+	  slideshow: {
+	    step:        0,
+	    delay:       5000,
+	    backgrounds: [],
+	    preload:     false,
+	    walk:        function(){}
+	  },
+	  overlay: {
+	    src:         '/lib/vegas/overlays/13.png', // defined by Css 
+	    opacity:     1,  // defined by Css 
+	  }
+	}
+
+	$(function() {
+	  $.vegas({
+	    src:'http://upload.wikimedia.org/wikipedia/commons/3/3c/Amargosa_desert.jpg'
+	  })
+	});
 
 	</script>
  </body></html>

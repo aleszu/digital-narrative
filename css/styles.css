@@ -33,7 +33,6 @@ h2 {
 }
 div.post { 
 	width: 300px; 
-	max-height: 400px;
 }
 span.highlight {
 	/*border: 1px solid red;*/
@@ -52,4 +51,9 @@ span.highlight:hover{
 	top: 0px;
 	position: absolute;
 	background-color: #fff;
+}
+
+.post {
+	background-color: rgba(0,0,0,.9);
+	padding: 20px;
 }
