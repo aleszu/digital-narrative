@@ -17,6 +17,7 @@
 </head>
 
 <body>
+	<div id="y"></div>
 	
 	<h1>Walking the Border</h1>
 
@@ -34,9 +35,6 @@
 		});   
 	});
 
-	console.log(sections);
-	console.log(sentences);
-
 	renderSections();
 
 	function renderSections(){
@@ -48,20 +46,17 @@
 	}
 
 	function renderSentences(section){
-
-		var ids = generateIDlist(section.id, section.sentences);
-
 		var acc = "";
 
-		_.each(ids, function(id){
+		_.each(idList(section.id, section.sentences), function(id){
 			var sentence = _.findWhere(sentences, {id : id});
-			acc += '<span class="highlight ' + sentence.link + '">' + sentence.sentence + "</span>";
+			acc += '<span class="highlight ' + sentence.link + '">' + sentence.sentence + "</span> ";
 		})
 
 		return "<p>" + acc + "</p>";;
 	}
 
-	function generateIDlist(prefix, count){
+	function idList(prefix, count){
 		var ids = [];
 
 		for (var i = 1; i <= count; i++) {
@@ -76,6 +71,17 @@
 
 		return ids;
 	}
+
+	var xhr= new XMLHttpRequest();
+	xhr.open('GET', 'links/001.html', true);
+
+	xhr.onreadystatechange= function() {
+	    if (this.readyState!==4) return;
+	    if (this.status!==200) return; // or whatever error handling you want
+	    document.getElementById('y').innerHTML= this.responseText;
+	};
+
+	xhr.send();
 
 	</script>
  </body></html>
