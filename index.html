@@ -12,6 +12,9 @@
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/jquery.mousewheel.js"></script>
 	<script src="./js/bootstrap-modal.js"></script>
+	<script src="./js/underscore-min.js"></script>
+
+	<script src="./js/content.js"></script>
 	<script>
 
 	$(function(){
@@ -25,6 +28,55 @@
 			event.preventDefault();
 		});   
 	});
+
+	console.log(sections);
+	console.log(sentences);
+
+	renderSections();
+
+	function renderSections(){
+		var acc = '<td><div class="post">'
+
+		_.each(sections, function(value, key){
+			console.log(value.title);
+
+			acc += renderSentences(value)
+		});
+
+		acc += "</div></td>";
+
+	}
+
+	function renderSentences(section){
+		var section = section;
+
+		var ids = [];
+
+		for (var i = 1; i <= section.sentences; i++) {
+
+			// Generate prefix
+			var prefix = null;
+			if (i < 10) prefix = "00";
+			if (i >= 10) prefix = "0"
+
+			ids.push(section.id + prefix + i);
+		};
+
+		var acc = "<p>";
+
+		_.each(ids, function(id){
+			var sentence = _.findWhere(sentences, {id : id});
+
+			acc += '<span class="highlight ' + sentence.link + '">' + sentence.sentence + "</span>";
+		})
+
+		acc += "</p>";
+
+		console.log(acc)
+
+		return acc;
+	}
+
 	</script>
 </head>
 

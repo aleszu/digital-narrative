@@ -35,7 +35,7 @@ div.post {
 	width: 300px; 
 	max-height: 400px;
 }
-span.highlight.c01 {
+span.highlight {
 	/*border: 1px solid red;*/
 	border-bottom: 1px solid orange;
 }
