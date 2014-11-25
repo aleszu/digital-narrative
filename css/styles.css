@@ -46,14 +46,19 @@ span.highlight:hover{
 	color: #fff;
 	/* cursor */
 }
-
-.modal {
-	top: 0px;
-	position: absolute;
-	background-color: #fff;
-}
-
 .post {
 	background-color: rgba(0,0,0,.9);
 	padding: 20px;
+}
+
+#modal {
+	background-color: #fff;
+
+	display: none;
+	margin: 0 auto;
+	position: absolute;
+	top: 10%;
+	padding: 40px;
+	width: 40%;
+	left: 30%;
 }

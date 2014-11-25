@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="/lib/vegas/jquery.vegas.min.css">
 	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.map"></script> -->
 
@@ -25,27 +24,14 @@
 
 	<h1>Walking the Border</h1>
 
+    <div id="modal">
+        <div class="back"><a onclick="hideModal();">Back to Story</a></div>
+        <div class="content"></div>
+    </div>
+
 	<div id="page-wrap"><table cellspacing="30"><tbody>
 		<tr id="posts"></tr>
 	</tbody></table></div>
-
-    <div class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            <p>One fine body&hellip;</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
 
 	<script>
 
@@ -102,21 +88,34 @@
 	       Load Sub-Sections
 	 ******************************/
 
-	// Load HTML from file into specified ID
-	loadHTML("001.html", "y"); 
+    showModal("001");
 
-	function loadHTML(source, target){
-		var xhr= new XMLHttpRequest();
-		xhr.open('GET', 'links/' + source, true);
+    function showModal(id){
+        xhr_GET(id + ".html", function(content){
 
-		xhr.onreadystatechange= function() {
-		    if (this.readyState!==4) return;
-		    if (this.status!==200) return; // or whatever error handling you want
-		    document.getElementById(target).innerHTML= this.responseText;
-		};
+            // Callback: populate & fade in modal
+            $("#modal .content").html(content).fadeIn();
+        })
+    }
 
-		xhr.send();
-	}
+    function hideModal(){
+        $("#modal").fadeOut();
+    }
+
+    function xhr_GET(url, next){
+        var xhr= new XMLHttpRequest();
+
+        xhr.open('GET', 'links/' + url, true);
+
+        xhr.onreadystatechange= function() {
+            if (this.readyState!==4) return;
+            if (this.status!==200) return; // or whatever error handling you want
+
+            next(this.responseText);
+        };
+
+        xhr.send();
+    }
 
 	/******************************
 	        Background
