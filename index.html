@@ -37,6 +37,10 @@
 		});   
 	});
 
+	/******************************
+	    Populate Initial Content
+	 ******************************/
+
 	renderSections();
 
 	function renderSections(){
@@ -74,6 +78,10 @@
 		return ids;
 	}
 
+	/******************************
+	       Load Sub-Sections
+	 ******************************/
+
 	// Load HTML from file into specified ID
 	loadHTML("001.html", "y"); 
 
@@ -89,6 +97,10 @@
 
 		xhr.send();
 	}
+
+	/******************************
+	        Background
+	 ******************************/
 
 	$.vegas.defaults = {
 	  background: {

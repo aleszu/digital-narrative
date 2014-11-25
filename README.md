@@ -7,8 +7,9 @@
 # Authors
 
 # References / Inspiration
-[Main Street Photos](http://mainstreet.nfb.ca/#/mainstreet)
-[Rock Genius](http://rock.genius.com/1818473/Chvrches-gun/You-stuck-in-the-knife-that-you-held-at-my-back)
+
+- [Main Street Photos](http://mainstreet.nfb.ca/#/mainstreet)
+- [Rock Genius](http://rock.genius.com/1818473/Chvrches-gun/You-stuck-in-the-knife-that-you-held-at-my-back)
 
 # TODO:
 
