@@ -17,7 +17,6 @@
 	<script src="/lib/jquery.mousewheel.js"></script>
 	<script src="/lib/vegas/jquery.vegas.min.js"></script>
 	<script src="/js/content.js"></script>
-    <script src="/js/story.js"></script>
 </head>
 
 <body>
@@ -36,7 +35,8 @@
 
 	<script>
 
-    console.log(story);
+    console.log(sections)
+    console.log(sentences)
 
 	$(function(){
 		// Map scroll to horizontal
@@ -65,6 +65,7 @@
 
 		_.each(idList(section.id, section.sentences), function(id){
 			var sentence = _.findWhere(sentences, {id : id});
+
 			acc += '<span class="highlight ' + sentence.link + '">' + sentence.sentence + "</span> ";
 		})
 
@@ -78,6 +79,7 @@
 
 			// Generate zeros
 			var zeros = null;
+
 			if (i < 10) zeros = "00";
 			if (i >= 10) zeros = "0"
 
