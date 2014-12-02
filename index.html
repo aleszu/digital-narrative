@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Horizontal Scrolling Trick from http://css-tricks.com/examples/HorzScrolling/ -->
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -36,4 +35,25 @@
 	<script src="js/content.js"></script>
 	<script src="js/config.js"></script>
 	<script src="js/app.js"></script>
+
+	<script>
+
+		// Horizontal Scrolling Trick from http://css-tricks.com/examples/HorzScrolling/ 
+
+		$(function(){
+
+			// Map scroll to horizontal
+			$("body, html").mousewheel(function(event, delta) {
+				this.scrollLeft -= (delta * 30);
+				event.preventDefault();
+			});   
+
+		//   $.vegas({
+		//     src:'http://upload.wikimedia.org/wikipedia/commons/3/3c/Amargosa_desert.jpg'
+		//   })
+
+		renderSections();
+
+		});
+	</script>
  </body></html>

@@ -3,8 +3,6 @@
 	    Populate Initial Content
 	 ******************************/
 
-	renderSections();
-
 	function renderSections(){
 		var acc = _.reduce(sections, function(memo, section){
 			return memo + '<td><div class="post">' + renderSentences(section) + "</div></td>";
@@ -19,7 +17,11 @@
 		_.each(idList(section.id, section.sentences), function(id){
 			var sentence = _.findWhere(sentences, {id : id});
 
-			acc += '<span onclick="javascript:modal(\'' + sentence.link + '\')" class="highlight">' + sentence.sentence + "</span> ";
+			// Start <span> tag if we have a link
+			acc +=  (sentence.link) ? '<span onclick="javascript:modal(\'' + sentence.link + '\')" class="highlight">' : '<span>'
+
+			// add content and close <span> tag.
+			acc +=  sentence.sentence + "</span> ";			
 		})
 
 		return "<p>" + acc + "</p>";;
@@ -47,8 +49,6 @@
 	 ******************************/
 
     function modal(id){
-
-    	alert(id);
 
     	var url = "links/" + id;
 

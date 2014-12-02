@@ -1,10 +1,3 @@
-$(function(){
-	// Map scroll to horizontal
-	$("body, html").mousewheel(function(event, delta) {
-		this.scrollLeft -= (delta * 30);
-		event.preventDefault();
-	});   
-});
 
 /******************************
         Background
@@ -32,9 +25,3 @@ $.vegas.defaults = {
     opacity:     1,  // defined by Css 
   }
 }
-
-// $(function() {
-//   $.vegas({
-//     src:'http://upload.wikimedia.org/wikipedia/commons/3/3c/Amargosa_desert.jpg'
-//   })
-// });
