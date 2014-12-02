@@ -54,7 +54,7 @@
 
     function modal(id){
 
-    	var url = "links/" + id;
+    	var url = "content/links/" + id;
 
         xhr_GET(url, function(content){
 
