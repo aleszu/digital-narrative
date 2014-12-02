@@ -14,7 +14,7 @@ var sentences = [
 }, { id: "a007", link: null,       sentence: "However, they are not allowed physical contact with them."
 
 // b"
-}, { id: "b001", link: "Friendship-circle.html", sentence: "This place is called the “Friendship Circle” and a marble obelisk stands in its center, breaking the fence."
+}, { id: "b001", link: "friendship-circle.html", sentence: "This place is called the “Friendship Circle” and a marble obelisk stands in its center, breaking the fence."
 }, { id: "b002", link: null, sentence: "In 1851, some men from something called the International Boundary Commission placed the obelisk here."
 }, { id: "b003", link: null, sentence: "The International Boundary Commission started on the beachfront hill when revising the border between the two countries and the obelisk was their first survey marker."
 }, { id: "b004", link: null, sentence: "Back then, the Mexican-American War had just ended, and Mexico had agreed to surrender more than half its territory to the United States, including the places now called California, Arizona, New Mexico, and Texas."

@@ -68,3 +68,13 @@ button {
 	margin-top: 10px;
 	margin-right: 10px;
 }
+
+#modal .content p {
+		font-size: 1.4em;
+	margin: 0 0 15px 0;
+	line-height: 1.8em;
+}
+
+#modal .content img {
+	width: 100%;
+}
