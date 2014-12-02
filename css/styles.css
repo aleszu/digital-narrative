@@ -62,3 +62,9 @@ span.highlight:hover{
 	width: 40%;
 	left: 30%;
 }
+
+button {
+	padding: 10px 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
