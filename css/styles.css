@@ -53,10 +53,10 @@ span.highlight:hover{
 
 #modal {
 	background-color: #fff;
-
 	display: none;
 	margin: 0 auto;
-	position: absolute;
+	position: fixed;
+
 	top: 10%;
 	padding: 40px;
 	width: 40%;
