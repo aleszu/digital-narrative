@@ -1,65 +1,20 @@
 
-// PARAGRAPHS
-
-var sections = 
-  [{ id: "a", title: null, image: null, sentences: 7
-}, { id: "b", title: null, image: null, sentences: 10
-}, { id: "c", title: null, image: null, sentences: 5
-}, { id: "d", title: null, image: null, sentences: 6
-}, { id: "e", title: null, image: null, sentences: 5
-}, { id: "f", title: null, image: null, sentences: 2
-}, { id: "g", title: null, image: null, sentences: 4
-}, { id: "h", title: null, image: null, sentences: 13
-}, { id: "i", title: null, image: null, sentences: 4
-}, { id: "j", title: null, image: null, sentences: 6
-}, { id: "k", title: null, image: null, sentences: 9
-}, { id: "l", title: null, image: null, sentences: 10
-}, { id: "m", title: null, image: null, sentences: 2
-}, { id: "n", title: null, image: null, sentences: 2
-}, { id: "o", title: null, image: null, sentences: 4
-}, { id: "p", title: null, image: null, sentences: 4
-}, { id: "q", title: null, image: null, sentences: 9
-}, { id: "r", title: null, image: null, sentences: 13
-}, { id: "s", title: null, image: null, sentences: 3
-}, { id: "t", title: null, image: null, sentences: 12
-}, { id: "u", title: null, image: null, sentences: 9
-}, { id: "v", title: null, image: null, sentences: 2
-}, { id: "w", title: null, image: null, sentences: 10
-}, { id: "x", title: null, image: null, sentences: 1
-}, { id: "y", title: null, image: null, sentences: 1
-}, { id: "z", title: null, image: null, sentences: 2
-}, { id: "aa", title: null, image: null, sentences: 9
-}, { id: "bb", title: null, image: null, sentences: 8
-}, { id: "cc", title: null, image: null, sentences: 7
-}, { id: "dd", title: null, image: null, sentences: 2
-}, { id: "ee", title: null, image: null, sentences: 10
-}, { id: "ff", title: null, image: null, sentences: 6
-}, { id: "gg", title: null, image: null, sentences: 14
-}, { id: "hh", title: null, image: null, sentences: 11
-}, { id: "ii", title: null, image: null, sentences: 1
-}, { id: "jj", title: null, image: null, sentences: 8
-}, { id: "kk", title: null, image: null, sentences: 10
-}, { id: "ll", title: null, image: null, sentences: 5
-}, { id: "mm", title: null, image: null, sentences: 2
-}, { id: "nn", title: null, image: null, sentences: 10
-}, { id: "oo", title: null, image: null, sentences: 1
-}, { id: "pp", title: null, image: null, sentences: 1 }];
-
 
 // SENTENCES
 
-// a
+
 var sentences = [
-   { id: "a001", link:  "001.html", sentence: "There is only one way to understand the 1,933-mile line that divides our country from Mexico. Start at the beach and walk east until you hit the Gulf."
-}, { id: "a002", link: null, sentence: "The fence starts about eighty feet out into the Pacific and is made of metal pylons."
-}, { id: "a003", link: null, sentence: "Once it hits dry land, it goes up the beach and onto a little hill."
-}, { id: "a004", link: null, sentence: "There it becomes two fences and looks more like a prison barrier."
-}, { id: "a005", link: null, sentence: "One fence follows the border line and the other runs parallel, north of it."
-}, { id: "a006", link: null, sentence: "The buffer zone between the two is reserved for the US Border control, except for when, on Saturdays and Sundays citizens are allowed to enter to look at and talk to Mexicans on the other side."
-}, { id: "a007", link: null, sentence: "However, they are not allowed physical contact with them."
+// a
+   { id: "a001", link: "001.html", sentence: "There is only one way to understand the 1,933-mile line that divides our country from Mexico. Start at the beach and walk east until you hit the Gulf."
+}, { id: "a002", link: null,       sentence: "The fence starts about eighty feet out into the Pacific and is made of metal pylons."
+}, { id: "a003", link: "001.html", sentence: "Once it hits dry land, it goes up the beach and onto a little hill."
+}, { id: "a004", link: null,       sentence: "There it becomes two fences and looks more like a prison barrier."
+}, { id: "a005", link: null,       sentence: "One fence follows the border line and the other runs parallel, north of it."
+}, { id: "a006", link: null,       sentence: "The buffer zone between the two is reserved for the US Border control, except for when, on Saturdays and Sundays citizens are allowed to enter to look at and talk to Mexicans on the other side."
+}, { id: "a007", link: null,       sentence: "However, they are not allowed physical contact with them."
 
 // b"
-}, { id: "b001", link: null, sentence: "This place is called the “Friendship Circle” and a marble obelisk stands in its center, breaking the fence."
+}, { id: "b001", link: "001.html", sentence: "This place is called the “Friendship Circle” and a marble obelisk stands in its center, breaking the fence."
 }, { id: "b002", link: null, sentence: "In 1851, some men from something called the International Boundary Commission placed the obelisk here."
 }, { id: "b003", link: null, sentence: "The International Boundary Commission started on the beachfront hill when revising the border between the two countries and the obelisk was their first survey marker."
 }, { id: "b004", link: null, sentence: "Back then, the Mexican-American War had just ended, and Mexico had agreed to surrender more than half its territory to the United States, including the places now called California, Arizona, New Mexico, and Texas."
