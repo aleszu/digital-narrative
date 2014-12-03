@@ -5,9 +5,9 @@
 
 var sentences = [
 // a
-   { id: "a001", link: "001.html", sentence: "There is only one way to understand the 1,933-mile line that divides our country from Mexico. Start at the beach and walk east until you hit the Gulf."
+   { id: "a001", link: null, sentence: "There is only one way to understand the 1,933-mile line that divides our country from Mexico. Start at the beach and walk east until you hit the Gulf."
 }, { id: "a002", link: null,       sentence: "The fence starts about eighty feet out into the Pacific and is made of metal pylons."
-}, { id: "a003", link: "001.html", sentence: "Once it hits dry land, it goes up the beach and onto a little hill."
+}, { id: "a003", link: "friendship-circle-3.html", sentence: "Once it hits dry land, it goes up the beach and onto a little hill."
 }, { id: "a004", link: null,       sentence: "There it becomes two fences and looks more like a prison barrier."
 }, { id: "a005", link: null,       sentence: "One fence follows the border line and the other runs parallel, north of it."
 }, { id: "a006", link: null,       sentence: "The buffer zone between the two is reserved for the US Border control, except for when, on Saturdays and Sundays citizens are allowed to enter to look at and talk to Mexicans on the other side."
@@ -15,7 +15,7 @@ var sentences = [
 
 // b"
 }, { id: "b001", link: "friendship-circle.html", sentence: "This place is called the “Friendship Circle” and a marble obelisk stands in its center, breaking the fence."
-}, { id: "b002", link: null, sentence: "In 1851, some men from something called the International Boundary Commission placed the obelisk here."
+}, { id: "b002", link: "friendship-circle-2.html", sentence: "In 1851, some men from something called the International Boundary Commission placed the obelisk here."
 }, { id: "b003", link: null, sentence: "The International Boundary Commission started on the beachfront hill when revising the border between the two countries and the obelisk was their first survey marker."
 }, { id: "b004", link: null, sentence: "Back then, the Mexican-American War had just ended, and Mexico had agreed to surrender more than half its territory to the United States, including the places now called California, Arizona, New Mexico, and Texas."
 }, { id: "b005", link: null, sentence: "The job of the International Boundary Commission was to come up with a map of the revised frontier between the two countries."
@@ -170,8 +170,8 @@ var sentences = [
 }, { id: "t007", link: null, sentence: "I hear and see things occasionally, murmurs and blurs of fabric, but when I stop to look and listen, everything goes still."
 }, { id: "t008", link: null, sentence: "Eventually I come to a spot where the fence continues east while the road goes north."
 }, { id: "t009", link: null, sentence: "I follow the road to an abandoned track and then reach Old Highway 80 which takes me south to a long concrete bridge."
-}, { id: "t010", link: "jacumba.html", sentence: "At the end of it, a sign says, wELCOME TO JACUMBA."
-}, { id: "t011", link: null, sentence: "A smaller one below it, with a little drawing of a woman dressed in a 1910-style bathing suit, reads JACUMBA HOT SPRINGS ..."
+}, { id: "t010", link: "jacumba.html", sentence: "At the end of it, a sign says, WELCOME TO JACUMBA."
+}, { id: "t011", link: "jacumba2.html", sentence: "A smaller one below it, with a little drawing of a woman dressed in a 1910-style bathing suit, reads JACUMBA HOT SPRINGS ..."
 }, { id: "t012", link: null, sentence: "ALL YOUR WANTS."
 
 // u"
@@ -227,10 +227,7 @@ var sentences = [
 }, { id: "bb002", link: null, sentence: "It\'s half full of greenish rainwater."
 }, { id: "bb003", link: null, sentence: "A quarter mile away lies the \"mesita de los muertos,\" a little mesa topped with anonymous with crosses under which lie the bones of about sixty people, who died in the area, unable to reach water."
 }, { id: "bb004", link: null, sentence: "I head east, onto the Camino del Diablo, with eight gallons in my stroller."
-}, { id: "bb005", link: "range.html", sentence: "A big chunk of the Camino runs though the U."
-}, { id: "bb006", link: null, sentence: "S."
-}, { id: "bb007", link: null, sentence: "Air Force\'s Barry M."
-}, { id: "bb008", link: null, sentence: "Goldwater Range and to gain entry, I signed a liability release that read that I accepted the \"danger of property damage and permanent, painful, disabling, and disfiguring injury or death due to high explosive detonations from falling objects such as aircraft, aerial targets, live ammunition, missiles, bombs, etc.\" Soon after leaving the Tinajas Altas, I hear a roaring sound and see two F-16 fighter jets that head towards me along the desert floor before shooting up into the sky."
+}, { id: "bb005", link: "range.html", sentence: "A big chunk of the Camino runs though the U.S Air Force\'s Barry M. Goldwater Range and to gain entry, I signed a liability release that read that I accepted the \"danger of property damage and permanent, painful, disabling, and disfiguring injury or death due to high explosive detonations from falling objects such as aircraft, aerial targets, live ammunition, missiles, bombs, etc.\" Soon after leaving the Tinajas Altas, I hear a roaring sound and see two F-16 fighter jets that head towards me along the desert floor before shooting up into the sky.",
 
 // cc"
 }, { id: "cc001", link: null, sentence: "It\'s early afternoon, my third day on the Camino, and the sand on this part of the trail is too deep for my stroller, so I\'m up on the thin crust of the desert instead, stumbling through the rough terrain."

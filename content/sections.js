@@ -29,7 +29,7 @@ var sections =
 }, { id: "y", title: null, image: null, sentences: 1
 }, { id: "z", title: null, image: null, sentences: 2
 }, { id: "aa", title: null, image: null, sentences: 9
-}, { id: "bb", title: null, image: null, sentences: 8
+}, { id: "bb", title: null, image: null, sentences: 5
 }, { id: "cc", title: null, image: null, sentences: 7
 }, { id: "dd", title: null, image: null, sentences: 2
 }, { id: "ee", title: null, image: null, sentences: 10
