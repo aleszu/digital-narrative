@@ -52,7 +52,11 @@ span.highlight:hover{
 }
 
 #modal {
-	background-color: #fff;
+	display: block;
+	background-color: #000;
+	border: 1px solid white;
+	border-radius: 10px;
+
 	display: none;
 	margin: 0 auto;
 	position: fixed;
@@ -63,6 +67,18 @@ span.highlight:hover{
 	left: 30%;
 }
 
+#modal .back {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#modal .back:hover{
+	color: orange;
+	text-decoration: underline;
+	cursor: pointer; 
+	cursor: hand;
+}
+
 button {
 	padding: 10px 20px;
 	margin-top: 10px;
@@ -70,7 +86,8 @@ button {
 }
 
 #modal .content p {
-		font-size: 1.4em;
+	color: #999;
+	font-size: 1.4em;
 	margin: 0 0 15px 0;
 	line-height: 1.8em;
 }
