@@ -15,6 +15,7 @@
 
 	<script src="lib/jquery.mousewheel.js"></script>
 	<script src="lib/vegas/jquery.vegas.min.js"></script>
+	<script src="lib/jInvertScroll.js"></script>
 </head>
 
 <body>
@@ -39,6 +40,31 @@
 	<script src="js/config.js"></script>
 	<script src="js/app.js"></script>
 
+
+    <div class="horizon scroll">
+        <img src="images/horizon.png" alt="" />
+    </div>
+    <div class="middle scroll">
+        <img src="images/middle.png" alt="" />
+    </div>
+    <div class="front scroll">
+        <img src="images/front.png" alt="" />
+    </div>
+    
+    
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+    }(jQuery));
+    </script>
+
+
 	<script>
 
 		// Horizontal Scrolling Trick from http://css-tricks.com/examples/HorzScrolling/ 
@@ -46,15 +72,17 @@
 		$(function(){
 
 			// Map scroll to horizontal
-			$("body, html").mousewheel(function(event, delta) {
-				this.scrollLeft -= (delta * 30);
-				event.preventDefault();
-			});   
+			// $("body, html").mousewheel(function(event, delta) {
+			// 	this.scrollLeft -= (delta * 30);
+			// 	event.preventDefault();
+			// });   
 
-		  $.vegas({
-		    src:'/img/background.png',
-		    overlay: "01.png",
-		  })
+			// $('#posts').parallax({imageSrc: '/img/background.png'});
+
+		  // $.vegas({
+		  //   src:'/img/background.png',
+		  //   overlay: "01.png",
+		  // })
 
 		renderSections();
 
