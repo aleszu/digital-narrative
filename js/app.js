@@ -17,8 +17,9 @@
 		_.each(idList(section.id, section.sentences), function(id){
 			var sentence = _.findWhere(sentences, {id : id});
 
+			// '<span onclick="javascript:modal(\'custom.html\')">'
 			// Start <span> tag if we have a link
-			acc +=  (sentence.link) ? '<span onclick="javascript:modal(\'' + sentence.link + '\')" class="highlight">' : '<span onclick="javascript:modal(\'custom.html\')">'
+			acc +=  (sentence.link) ? '<span onclick="javascript:modal(\'' + sentence.link + '\')" class="highlight">' : '<span>'
 
 			// add content and close <span> tag.
 			acc +=  sentence.sentence + "</span> ";			
