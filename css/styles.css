@@ -46,6 +46,15 @@ span.highlight:hover{
 	color: #fff;
 	/* cursor */
 }
+
+.title {
+	z-index:9999;
+}
+
+.title a {
+	color: #fff;
+}
+
 .post {
 	background-color: rgba(0,0,0,.9);
 	padding: 20px;
@@ -65,6 +74,8 @@ span.highlight:hover{
 	padding: 40px;
 	width: 40%;
 	left: 30%;
+
+	z-index: 9999;
 }
 
 #modal .back {
@@ -96,13 +107,13 @@ button {
 	width: 100%;
 }
 
+/* PARALLAX */
 
 /**
   * important: keep position fixed, you can however use top:0 instead of bottom:0
   * if you want to make it stick to the top of the browser
   */
-.scroll
-{
+.scroll {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -112,20 +123,19 @@ button {
   * z-index ordering of the different layers, do this for your layers,
   * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
   */
-.horizon
-{
+.horizon {
   z-index: 1;
   width: 3000px;
 }
 
-.middle
-{
+.middle {
+  top: 200px;
   z-index: 500;
-  width: 4000px;
+  width: 1800px;
+  background-image: url('/img/background-wide.png');
 }
 
-.front
-{
+.front {
   z-index: 1000;
-  width: 6000px;
+  width: 16000px;
 }
