@@ -340,11 +340,9 @@ var sentences = [
 }, { id: "nn010", link: null, sentence: "It is to become Ajo\'s economic center and soon one in four people living in Ajo will either be a Border Patrol agent, the spouse of one, or the child of one."
 
 // oo"
-}, { id: "oo001", link: null, sentence: "Twenty-seven miles farther south, the highway ends at the Lukeville crossing, and another new procession of steel and wire, built in 2008, marches east across the desert."
+}, { id: "oo001", link: null, sentence: "Twenty-seven miles farther south, the highway ends at the Lukeville crossing, and another new procession of steel and wire, built in 2008, marches east across the desert. That\'s where I\'ll begin again, when I return."
 
-// pp"
-}, { id: "pp001", link: null, sentence: "That\'s where I\'ll begin again, when I return." }];
-
+}]
 
 	
 	// DEBUG

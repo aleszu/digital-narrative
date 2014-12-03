@@ -48,11 +48,15 @@ span.highlight:hover{
 }
 
 .title {
+	position: absolute;
+	color: #000;
 	z-index:9999;
 }
 
-.title a {
-	color: #fff;
+.title h1,
+.title p,
+.title a  {
+	color: #000;
 }
 
 .post {
@@ -125,14 +129,16 @@ button {
   */
 .horizon {
   z-index: 1;
-  width: 3000px;
+  width: 2400px;
+  top: 0px;
+  /*background-image: url('/img/background-sky.jpg');*/
 }
 
 .middle {
-  top: 200px;
+  top: 250px;
   z-index: 500;
   width: 1800px;
-  background-image: url('/img/background-wide.png');
+  background-image: url('/img/background-sand.png');
 }
 
 .front {
