@@ -123,11 +123,39 @@ span.highlight.r5 {
 	z-index: 9999;
 }
 
+#modal .rating, 
+#modal .back {
+	width: 50%;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+#modal .rating  {
+	font-size: 30px;
+	color: #fff;
+}
+
+#modal .rating a {
+	padding-right: 10px;
+	cursor: pointer; cursor: hand;
+	
+	-moz-user-select: none;
+   	-khtml-user-select: none;
+   	-webkit-user-select: none;
+}
+
+#modal .rating a.fa-thumbs-up.active {
+	color: green;
+}
+#modal .rating a.fa-thumbs-down.active {
+	color: red;
+}
+
 #modal .back {
 	font-size: 20px;
 	margin-top: 10px;
-	width: 100%;
-	text-align: center;
+	text-align: right;
 }
 
 #modal .back:hover{
@@ -137,6 +165,11 @@ span.highlight.r5 {
 	cursor: hand;
 
 }
+
+/*#modal .back a {
+	width: 100%;
+	text-align: right;
+}*/
 
 #modal .content p {
 	color: #999;

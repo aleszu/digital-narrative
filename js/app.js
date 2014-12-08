@@ -49,6 +49,25 @@
 	}
 
 	/******************************
+	       Adjust Rating
+	 ******************************/
+
+	function rate(amount){
+		
+		// Reset ratings UI
+		$(".fa-thumbs-down").removeClass("active");
+		$(".fa-thumbs-up").removeClass("active");
+
+		if (amount < 0){
+			$(".fa-thumbs-down").addClass("active");
+		}
+
+		if (amount > 0){
+			$(".fa-thumbs-up").addClass("active");
+		}
+	}
+
+	/******************************
 	       Load Sub-Sections
 	 ******************************/
 
@@ -65,7 +84,12 @@
     }
 
     function hideModal(){
+        
+        // Fade out content modal
         $("#modal").fadeOut();
+
+        // reset ratings UI
+        rate(0);
     }
 
     function xhr_GET(url, next){

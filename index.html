@@ -11,6 +11,8 @@
 	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.map"></script> -->
 
 	<script src="lib/jquery.mousewheel.js"></script>
@@ -43,7 +45,11 @@
 	<!-- Additional Content -->	
 	<div id="modal">
         <div class="content"></div>
-        <div class="back"><a onclick="hideModal();">Back to Story</a></div>
+        <div class="rating">
+        	<a onclick="rate(1);" class="fa fa-thumbs-up"></a>
+        	<a onclick="rate(-1);" class="fa fa-thumbs-down"></a>
+        </div>
+        <div class="back"><a onclick="hideModal();">Back to Story <i class="fa fa-chevron-right"></i></a></div>
     </div>
 
     <div id="add">
@@ -71,20 +77,11 @@
             }
         });
 
-
-
     }(jQuery));
 
+    // Render content into DOM
 	$(function(){
-	// Horizontal Scrolling Trick from http://css-tricks.com/examples/HorzScrolling/ 
-	// Map scroll to horizontal
-	// $("body, html").mousewheel(function(event, delta) {
-	// 	this.scrollLeft -= (delta * 30);
-	// 	event.preventDefault();
-	// });   
-
-	renderSections();
-
+		renderSections();
 	});
 
 	// Bind <esc> key for closing modals.
