@@ -7,15 +7,15 @@ var sentences = [
 // a
    { id: "a001", link: null, sentence: "There is only one way to understand the 1,933-mile line that divides our country from Mexico. Start at the beach and walk east until you hit the Gulf."
 }, { id: "a002", link: null,       sentence: "The fence starts about eighty feet out into the Pacific and is made of metal pylons."
-}, { id: "a003", link: "friendship-circle-3.html", sentence: "Once it hits dry land, it goes up the beach and onto a little hill."
+}, { id: "a003", link: "friendship-circle-3.html", rating: 1, sentence: "Once it hits dry land, it goes up the beach and onto a little hill."
 }, { id: "a004", link: null,       sentence: "There it becomes two fences and looks more like a prison barrier."
 }, { id: "a005", link: null,       sentence: "One fence follows the border line and the other runs parallel, north of it."
 }, { id: "a006", link: null,       sentence: "The buffer zone between the two is reserved for the US Border control, except for when, on Saturdays and Sundays citizens are allowed to enter to look at and talk to Mexicans on the other side."
 }, { id: "a007", link: null,       sentence: "However, they are not allowed physical contact with them."
 
 // b"
-}, { id: "b001", link: "friendship-circle.html", sentence: "This place is called the “Friendship Circle” and a marble obelisk stands in its center, breaking the fence."
-}, { id: "b002", link: "friendship-circle-2.html", sentence: "In 1851, some men from something called the International Boundary Commission placed the obelisk here."
+}, { id: "b001", link: "friendship-circle.html", rating: 1, sentence: "This place is called the “Friendship Circle” and a marble obelisk stands in its center, breaking the fence."
+}, { id: "b002", link: "friendship-circle-2.html", rating: 3, sentence: "In 1851, some men from something called the International Boundary Commission placed the obelisk here."
 }, { id: "b003", link: null, sentence: "The International Boundary Commission started on the beachfront hill when revising the border between the two countries and the obelisk was their first survey marker."
 }, { id: "b004", link: null, sentence: "Back then, the Mexican-American War had just ended, and Mexico had agreed to surrender more than half its territory to the United States, including the places now called California, Arizona, New Mexico, and Texas."
 }, { id: "b005", link: null, sentence: "The job of the International Boundary Commission was to come up with a map of the revised frontier between the two countries."
@@ -36,7 +36,7 @@ var sentences = [
 }, { id: "d001", link: null, sentence: "There are certain problems in walking along the border, since the only way to walk along the borderline is to follow the Border Patrol’s dirt roads, but the Border Patrol does not give out maps of these roads to the public."
 }, { id: "d002", link: null, sentence: "You can use satellite imagery, but these are not always current because new roads are being plowed."
 }, { id: "d003", link: null, sentence: "Additionally, any route you select is a mix of deserts and mountains."
-}, { id: "d004", link: "smuggler-gulch.html", sentence: "An example of these problems is an area called Smuggler’s Gulch, east of Friendship Circle, where maps show a deep ravine used by drug and human traffickers for decades."
+}, { id: "d004", link: "smuggler-gulch.html", rating: 3, sentence: "An example of these problems is an area called Smuggler’s Gulch, east of Friendship Circle, where maps show a deep ravine used by drug and human traffickers for decades."
 }, { id: "d005", link: null, sentence: "But a few years ago, the Department of Homeland Security sent in earthmovers to flatten the area and top it with a Border Patrol road and floodlights."
 }, { id: "d006", link: null, sentence: "My maps are wrong."
 
@@ -53,7 +53,7 @@ var sentences = [
 
 // g"
 }, { id: "g001", link: null, sentence: "I look up, but I don\'t stop leaning."
-}, { id: "g002", link: "supplies.html", sentence: "The stroller and everything in it weighs more than 120 pounds."
+}, { id: "g002", link: "supplies.html", rating: 5, sentence: "The stroller and everything in it weighs more than 120 pounds."
 }, { id: "g003", link: null, sentence: "I am near the top of the Otay Mountain and the incline is steep, at least 45 degrees, so if I stop leaning the stroller will roll back and down the slope."
 }, { id: "g004", link: null, sentence: "The agent is standing on the top of the rise, looking down and holding a pair of binoculars."
 
@@ -89,7 +89,7 @@ var sentences = [
 // k"
 }, { id: "k001", link: null, sentence: "I spot a truck with an agent inside and tap on the window."
 }, { id: "k002", link: null, sentence: "He rolls it down and gives me a nod."
-}, { id: "k003", link: "tecatito.html", sentence: "People call this town Tecatito because it sits across the border from the much bigger town of Tecate, Mexico."
+}, { id: "k003", link: "tecatito.html", rating: 1, sentence: "People call this town Tecatito because it sits across the border from the much bigger town of Tecate, Mexico."
 }, { id: "k004", link: null, sentence: "The agent\'s truck is pointed straight south, where someone occasionally walks out of the Customs building and into America."
 }, { id: "k005", link: null, sentence: "He can see a poster on the wall with head shots of Hispanic man and details of what they are wanted for."
 }, { id: "k006", link: null, sentence: "I tell him I\'m going across and that I\'ll have to walk through most of Tecate to get to my hotel."
@@ -111,7 +111,7 @@ var sentences = [
 
 // m"
 }, { id: "m001", link: null, sentence: "Tonight I eat a restaurant near my hotel."
-}, { id: "m002", link: "meal.html", sentence: "I drink a few bottles of local brew and have a shot, and it’s the best meal I’ve had in months."
+}, { id: "m002", link: "meal.html", rating: 5, sentence: "I drink a few bottles of local brew and have a shot, and it’s the best meal I’ve had in months."
 
 // n"
 }, { id: "n001", link: null, sentence: "\"You weren\'t wearing those earlier.\" He\'s got his flashlight aimed at my flip-flops and I tell him they\'re my camp shoes."
@@ -170,8 +170,8 @@ var sentences = [
 }, { id: "t007", link: null, sentence: "I hear and see things occasionally, murmurs and blurs of fabric, but when I stop to look and listen, everything goes still."
 }, { id: "t008", link: null, sentence: "Eventually I come to a spot where the fence continues east while the road goes north."
 }, { id: "t009", link: null, sentence: "I follow the road to an abandoned track and then reach Old Highway 80 which takes me south to a long concrete bridge."
-}, { id: "t010", link: "jacumba.html", sentence: "At the end of it, a sign says, WELCOME TO JACUMBA."
-}, { id: "t011", link: "jacumba2.html", sentence: "A smaller one below it, with a little drawing of a woman dressed in a 1910-style bathing suit, reads JACUMBA HOT SPRINGS ..."
+}, { id: "t010", link: "jacumba.html", rating: 1, sentence: "At the end of it, a sign says, WELCOME TO JACUMBA."
+}, { id: "t011", link: "jacumba2.html", rating: 3, sentence: "A smaller one below it, with a little drawing of a woman dressed in a 1910-style bathing suit, reads JACUMBA HOT SPRINGS ..."
 }, { id: "t012", link: null, sentence: "ALL YOUR WANTS."
 
 // u"
@@ -180,7 +180,7 @@ var sentences = [
 }, { id: "u003", link: null, sentence: "Except for the convenience store across the street from the hotel and Laundromat next to it, almost everything here has gone out of business."
 }, { id: "u004", link: null, sentence: "A group of Border Patrol agents are milling around, waiting for something."
 }, { id: "u005", link: null, sentence: "I ask the manager about Jacume, the town directly across the fence from Jacumba."
-}, { id: "u006", link: "la-times.html", sentence: "I\'d read about Jacume, called a “black hole” by the Los Angeles Times, overrun by smugglers."
+}, { id: "u006", link: "la-times.html", rating: 1, sentence: "I\'d read about Jacume, called a “black hole” by the Los Angeles Times, overrun by smugglers."
 }, { id: "u007", link: null, sentence: "Even the Mexican cops won\'t go near it."
 }, { id: "u008", link: null, sentence: "The manager tells me that Jacumba and Jacume used to be close and before the fence went up, people from Jacume used to cross to work and shop in Jacumba, and people from Jacumba used to cross to eat and party in Jacume."
 }, { id: "u009", link: null, sentence: "Now they are just towns on the border."
@@ -219,7 +219,7 @@ var sentences = [
 }, { id: "aa005", link: null, sentence: "Valencia refilled his canteens there and ran into geologist WJ McGee who had set up camp nearby."
 }, { id: "aa006", link: null, sentence: "The two men shared a meal together before Valencia departed eastward."
 }, { id: "aa007", link: null, sentence: "Eight days later, at dawn, McGee heard an inhuman shriek and followed it to its source."
-}, { id: "aa008", link: "valencia.html", sentence: "He discovered Valencia, previously in great condition, naked, emaciated, blackened, and completely shriveled to the point of deformation."
+}, { id: "aa008", link: "valencia.html", rating: 5, sentence: "He discovered Valencia, previously in great condition, naked, emaciated, blackened, and completely shriveled to the point of deformation."
 }, { id: "aa009", link: null, sentence: "He was one of few to survive the Camino del Diablo and to eventually recover from the state of extreme dehydration."
 
 // bb"
@@ -227,7 +227,7 @@ var sentences = [
 }, { id: "bb002", link: null, sentence: "It\'s half full of greenish rainwater."
 }, { id: "bb003", link: null, sentence: "A quarter mile away lies the \"mesita de los muertos,\" a little mesa topped with anonymous with crosses under which lie the bones of about sixty people, who died in the area, unable to reach water."
 }, { id: "bb004", link: null, sentence: "I head east, onto the Camino del Diablo, with eight gallons in my stroller."
-}, { id: "bb005", link: "range.html", sentence: "A big chunk of the Camino runs though the U.S Air Force\'s Barry M. Goldwater Range and to gain entry, I signed a liability release that read that I accepted the \"danger of property damage and permanent, painful, disabling, and disfiguring injury or death due to high explosive detonations from falling objects such as aircraft, aerial targets, live ammunition, missiles, bombs, etc.\" Soon after leaving the Tinajas Altas, I hear a roaring sound and see two F-16 fighter jets that head towards me along the desert floor before shooting up into the sky.",
+}, { id: "bb005", link: "range.html", rating: 4, sentence: "A big chunk of the Camino runs though the U.S Air Force\'s Barry M. Goldwater Range and to gain entry, I signed a liability release that read that I accepted the \"danger of property damage and permanent, painful, disabling, and disfiguring injury or death due to high explosive detonations from falling objects such as aircraft, aerial targets, live ammunition, missiles, bombs, etc.\" Soon after leaving the Tinajas Altas, I hear a roaring sound and see two F-16 fighter jets that head towards me along the desert floor before shooting up into the sky.",
 
 // cc"
 }, { id: "cc001", link: null, sentence: "It\'s early afternoon, my third day on the Camino, and the sand on this part of the trail is too deep for my stroller, so I\'m up on the thin crust of the desert instead, stumbling through the rough terrain."
@@ -243,7 +243,7 @@ var sentences = [
 }, { id: "dd002", link: null, sentence: "\"That\'s a long way away.\""
 
 // ee"
-}, { id: "ee001", link: "borderpatrol.html", sentence: "They drive off and I fall back into my stupor, walking, until about a half hour later when I notice that the same Border Patrol vehicle is stopped at a bend in the trail in the distance, just parked there, idling."
+}, { id: "ee001", link: "borderpatrol.html", rating: 2, sentence: "They drive off and I fall back into my stupor, walking, until about a half hour later when I notice that the same Border Patrol vehicle is stopped at a bend in the trail in the distance, just parked there, idling."
 }, { id: "ee002", link: null, sentence: "Your head does funny things."
 }, { id: "ee003", link: null, sentence: "You\'re all alone for hours at a stretch, and your solitude does not lend itself to deep contemplation."
 }, { id: "ee004", link: null, sentence: "Mostly you just fall into half-trances, with no thoughts at all, until some unexpected stimulus intrudes and seizes hold of your mind."
@@ -279,7 +279,7 @@ var sentences = [
 }, { id: "gg014", link: null, sentence: "At dawn the light is gone."
 
 // hh"
-}, { id: "hh001", link: "camino.html", sentence: "The Camino del Diablo is older than America, extending from Tinajas Altas for a hundred miles."
+}, { id: "hh001", link: "camino.html", rating: 3, sentence: "The Camino del Diablo is older than America, extending from Tinajas Altas for a hundred miles."
 }, { id: "hh002", link: null, sentence: "Nobody knows who created the trail, but a thousand years ago it was already ancient."
 }, { id: "hh003", link: null, sentence: "Young Papago Indians would make holy pilgrimages on it, a regiment of conquistadores may have ridden here in the 1500s, but the first Europeans here were the Jesuit missionaries in 1699."
 }, { id: "hh004", link: null, sentence: "It earned its name during the Gold Rush when hundreds of miners and their families dried up and died here, trying to reach California."
@@ -325,7 +325,7 @@ var sentences = [
 
 // mm"
 }, { id: "mm001", link: null, sentence: "The New Cornelia Mine is an open pit a mile wide with rainwater at the bottom."
-}, { id: "mm002", link: "mine.html", sentence: "For seventy years the people of Ajo lived off the mine, until copper prices crashed and in 1984 the mine shut down."
+}, { id: "mm002", link: "mine.html", rating: 5, sentence: "For seventy years the people of Ajo lived off the mine, until copper prices crashed and in 1984 the mine shut down."
 
 // nn"
 }, { id: "nn001", link: null, sentence: "I follow the road to the dam\'s leading edge, then around the dam to the northeast, until I reach the intersection with State Route 85 and walk north."

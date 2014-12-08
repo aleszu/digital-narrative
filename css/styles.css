@@ -35,13 +35,31 @@ div.post {
 	width: 300px; 
 }
 span.highlight {
-	/*border: 1px solid red;*/
-	border-bottom: 1px solid orange;
+	border-bottom: 1px solid #ffaf41;
 	cursor: pointer; cursor: hand;
 }
 span.highlight:hover{
 	color: #fff;
-	/* cursor */
+}
+/* rating 1/5 */
+span.highlight.r1 {
+	border-bottom: 1px solid #9b2600;
+}
+/* rating 2/5 */
+span.highlight.r2 {
+	border-bottom: 1px solid #c44925;
+}
+/* rating 3/5 */
+span.highlight.r3 {
+	border-bottom: 1px solid #ffaf41;
+}
+/* rating 4/5 */
+span.highlight.r4 {
+	border-bottom: 1px solid #ffefa8;
+}
+/* rating 5/5 */
+span.highlight.r5 {
+	border-bottom: 1px solid #328868;
 }
 
 .title {
