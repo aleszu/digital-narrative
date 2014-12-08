@@ -243,7 +243,7 @@ var sentences = [
 }, { id: "dd002", link: null, sentence: "\"That\'s a long way away.\""
 
 // ee"
-}, { id: "ee001", link: null, sentence: "They drive off and I fall back into my stupor, walking, until about a half hour later when I notice that the same Border Patrol vehicle is stopped at a bend in the trail in the distance, just parked there, idling."
+}, { id: "ee001", link: "borderpatrol.html", sentence: "They drive off and I fall back into my stupor, walking, until about a half hour later when I notice that the same Border Patrol vehicle is stopped at a bend in the trail in the distance, just parked there, idling."
 }, { id: "ee002", link: null, sentence: "Your head does funny things."
 }, { id: "ee003", link: null, sentence: "You\'re all alone for hours at a stretch, and your solitude does not lend itself to deep contemplation."
 }, { id: "ee004", link: null, sentence: "Mostly you just fall into half-trances, with no thoughts at all, until some unexpected stimulus intrudes and seizes hold of your mind."
@@ -279,7 +279,7 @@ var sentences = [
 }, { id: "gg014", link: null, sentence: "At dawn the light is gone."
 
 // hh"
-}, { id: "hh001", link: null, sentence: "The Camino del Diablo is older than America, extending from Tinajas Altas for a hundred miles."
+}, { id: "hh001", link: "camino.html", sentence: "The Camino del Diablo is older than America, extending from Tinajas Altas for a hundred miles."
 }, { id: "hh002", link: null, sentence: "Nobody knows who created the trail, but a thousand years ago it was already ancient."
 }, { id: "hh003", link: null, sentence: "Young Papago Indians would make holy pilgrimages on it, a regiment of conquistadores may have ridden here in the 1500s, but the first Europeans here were the Jesuit missionaries in 1699."
 }, { id: "hh004", link: null, sentence: "It earned its name during the Gold Rush when hundreds of miners and their families dried up and died here, trying to reach California."
@@ -325,7 +325,7 @@ var sentences = [
 
 // mm"
 }, { id: "mm001", link: null, sentence: "The New Cornelia Mine is an open pit a mile wide with rainwater at the bottom."
-}, { id: "mm002", link: null, sentence: "For seventy years the people of Ajo lived off the mine, until copper prices crashed and in 1984 the mine shut down."
+}, { id: "mm002", link: "mine.html", sentence: "For seventy years the people of Ajo lived off the mine, until copper prices crashed and in 1984 the mine shut down."
 
 // nn"
 }, { id: "nn001", link: null, sentence: "I follow the road to the dam\'s leading edge, then around the dam to the northeast, until I reach the intersection with State Route 85 and walk north."

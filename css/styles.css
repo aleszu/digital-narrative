@@ -75,16 +75,18 @@ span.highlight:hover{
 	position: fixed;
 
 	top: 10%;
-	padding: 40px;
-	width: 40%;
-	left: 30%;
+	padding: 20px;
+	width: 50%;
+	left: 25%;
 
 	z-index: 9999;
 }
 
 #modal .back {
 	font-size: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
 }
 
 #modal .back:hover{
