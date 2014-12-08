@@ -63,6 +63,32 @@ span.highlight:hover{
 	background-color: rgba(0,0,0,.9);
 	padding: 20px;
 }
+#add {
+	background-color: rgb(36, 138, 157);
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	z-index: 999999;
+	position: fixed;
+	bottom: -10px;
+	right: -10px;
+}
+
+#add:hover {
+	background-color: rgb(82, 117, 132);
+	cursor: pointer; cursor: hand;
+}
+
+#add h1 {
+	color: #fff;
+	padding-left: 22px;
+	padding-top: 0;
+	font-size: 60px;
+
+	-moz-user-select: none;
+   	-khtml-user-select: none;
+   	-webkit-user-select: none;
+}
 
 #modal {
 	display: block;
@@ -96,12 +122,6 @@ span.highlight:hover{
 	cursor: hand;
 }
 
-button {
-	padding: 10px 20px;
-	margin-top: 10px;
-	margin-right: 10px;
-}
-
 #modal .content p {
 	color: #999;
 	font-size: 1.4em;
@@ -111,6 +131,35 @@ button {
 
 #modal .content img {
 	width: 100%;
+}
+
+/* custom content */
+textarea {
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+button {
+	padding: 15px 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer; cursor: hand;
+}
+
+button.save {
+	background-color: rgb(36, 138, 157);
+	padding: 15px 40px;
+}
+
+button.close {
+	background-color: rgb(79, 79, 79);
 }
 
 /* PARALLAX */
@@ -147,3 +196,4 @@ button {
   z-index: 1000;
   width: 16000px;
 }
+
